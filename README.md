@@ -7,3 +7,7 @@ Make files perish.
 ```shell
 perish ./path/to/file
 ```
+
+## Example
+
+<img src="./example.png" width="256" height="256" />
