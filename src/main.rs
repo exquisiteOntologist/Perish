@@ -22,8 +22,6 @@ fn main() -> io::Result<()> {
     f.set_len(f_size / 2)?;
     // add empty 0s in place of 2nd half
     f.set_len(f_size)?;
-
-    // f.sync_all()?;
    
     println!("file has now perished");
 
