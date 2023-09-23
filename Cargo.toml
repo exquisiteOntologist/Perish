@@ -1,0 +1,23 @@
+[package]
+name = "perish"
+version = "0.1.0"
+authors = ["Jon Vaillant <hi@jonvaillant.com>"]
+edition = "2021"
+
+[dependencies]
+
+
+[profile.release]
+strip = true        # Automatically strip symbols from the binary.
+opt-level = 'z'     # Optimize for size.
+lto = true          # Enable Link Time Optimization
+codegen-units = 1   # Reduce number of codegen units to increase optimizations.
+panic = 'abort'     # Abort on panic
+
+[build]
+target = "perish"
+
+[[bin]]
+name = "perish"
+test = false
+bench = false
